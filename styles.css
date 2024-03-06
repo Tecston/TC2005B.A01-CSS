@@ -1,0 +1,309 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+header .header-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+.login-button{
+  background-color: #F25757;;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button{
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #F25757;
+  padding: 10px 20px;
+  color: white;
+}
+
+
+/* MAIN */
+main img{
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-img{
+  width: 100%;
+  height: 350px;
+
+}
+/* section 1 */
+
+.wrapper-row{
+  display: flex;
+
+}
+
+.section-1_content{
+  background-color: #E7E991;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.section-1_p{
+  text-align: right;
+}
+
+/* section 1 aside */
+.section-1_aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #FEFFDB;
+
+}
+
+.section-1_aside img{
+  width: 100%;
+  height: auto;
+}
+
+/* section 2 */
+
+.section-2_div-1{
+  background-image: url("./public/70+locations.png");
+  height: 225px;
+  padding: 50px;
+}
+
+.section-2_div-2{
+  width: 70%;
+  margin: 20px auto;
+}
+
+
+/* article-1 */
+
+.article-1{
+  background-image: url("./public/article.png");
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+.article-1-text{
+  color: white;
+  max-width: 30vw;
+  
+}
+
+.article-1-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.article-1-card{
+  background-color: white;
+  min-height: 291px;
+  max-width: 351px;
+  margin: 5px 5px;
+  padding: 30px;
+}
+
+.article-l-card-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+}
+
+.article-1-card-img{
+  width: 50%;
+  height: auto;
+}
+
+.article-1-card-img img{
+  width: 100%;
+  border-radius: 50%;
+  height: auto;
+}
+
+
+/* final_div */
+
+.final_div-img{
+  width: 50%;
+  min-height: 100%;
+}
+
+.final_div-img img{
+  width: 100%;
+  height: 100%;
+
+}
+
+.aside-form{
+  background-color: #CECECE;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.aside-form h4{
+  font-size: 40px;
+  color: #F25757;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form label {
+  margin-top: 10px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  height: 81px;
+}
+
+.form .location-zip {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.form .location-zip input[type="text"] {
+  width: 48%;
+}
+
+.textarea{
+  min-height: 136px;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+}
+
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 30%;
+  margin-right: 20%;
+}
+
+.footer-ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5%;
+  padding: 0;
+  color: #fff;
+}
+
+.footer-ul li {
+  width: calc(25% - 10px);
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+.footer-ul li ul {
+  margin-left: 20px;
+}
+
+.footer-ul>li>ul>li>a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.ul-title {
+  color: #BDBDBD;
+  text-decoration: none;
+}
+
+
+.footer-ul a:hover {
+  color: #007bff;
+}
+
+.footer-ul p {
+  color: #BDBDBD;
+  text-align: start;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+@media (max-width: 20px) {
+  .form .location-zip input[type="text"] {
+    width: 100%;
+  }
+  
+}
